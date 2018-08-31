@@ -37,8 +37,8 @@ def turn(board)
   input = gets.chomp
   index = input_to_index(input)
   if valid_move?(board, index)
-    return move(board, index)
-    puts board
+    move(board, index)
+    return puts board
   else
     return turn(board)
   end
